@@ -1,0 +1,96 @@
+.files-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.files-card header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.files-card header p {
+  color: #475569;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.file-entry {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.file-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.file-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.file-header span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.hash-line {
+  font-size: 0.85rem;
+  color: #475569;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hash-line code {
+  background: #f8fafc;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.35rem;
+  font-family: 'IBM Plex Mono', SFMono-Regular, Consolas, monospace;
+}
+
+.file-entry button {
+  align-self: flex-start;
+  padding: 0.45rem 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: #0f766e;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.decrypted-panel {
+  background-color: #ecfccb;
+  border: 1px solid #bef264;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.decrypted-panel strong {
+  color: #14532d;
+}
+
+.decrypted-panel a {
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 600;
+}
