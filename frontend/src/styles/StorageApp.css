@@ -1,0 +1,101 @@
+.storage-app {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f9fafb 0%, #f1f5f9 100%);
+}
+
+.storage-main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(12, 74, 110, 0.12);
+  margin-bottom: 2rem;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: #0ea5e9;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 2.3rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.hero-description {
+  color: #475569;
+  max-width: 40rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 0.18rem;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.tab-navigation {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-button {
+  flex: 1;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgba(15, 118, 110, 0.08);
+  color: #0f766e;
+  transition: all 0.2s ease;
+}
+
+.tab-button.active {
+  background-color: #0f766e;
+  color: white;
+  box-shadow: 0 10px 20px rgba(15, 118, 110, 0.35);
+}
+
+.tab-button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .tab-navigation {
+    flex-direction: column;
+  }
+}

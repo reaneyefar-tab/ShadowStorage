@@ -1,0 +1,115 @@
+.upload-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+.upload-card header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #0f172a;
+}
+
+.upload-card header p {
+  margin: 0.5rem 0 1.5rem;
+  color: #475569;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-control label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.form-control input[type='file'],
+.form-control input[type='text'] {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.85rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.form-control button {
+  align-self: flex-start;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  border: none;
+  background-color: #0f766e;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.form-control button:disabled,
+.upload-form > button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-control button:hover:not(:disabled),
+.upload-form > button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.file-preview {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+  font-size: 0.9rem;
+}
+
+.pill {
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  background-color: #f1f5f9;
+  font-family: 'IBM Plex Mono', SFMono-Regular, Consolas, monospace;
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+.upload-form > button {
+  align-self: flex-start;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: #0284c7;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.info-text {
+  font-size: 0.85rem;
+  color: #0369a1;
+  margin: 0;
+}
+
+.error-text {
+  font-size: 0.85rem;
+  color: #dc2626;
+  margin: 0;
+}
+
+@media (max-width: 660px) {
+  .upload-card {
+    padding: 1.5rem;
+  }
+}
